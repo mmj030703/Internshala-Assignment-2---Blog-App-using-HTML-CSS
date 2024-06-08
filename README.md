@@ -3,8 +3,8 @@
 ### This is a Blog App made using HTML & CSS.
 
 ## Live
-- Live Link []
-- Github Link []
+- [Live Link] (https://mmj030703.github.io/Internshala-Assignment-2---Blog-App-using-HTML-CSS/index.html)  
+- [Github Link] (https://github.com/mmj030703/Internshala-Assignment-2---Blog-App-using-HTML-CSS)
 
 ## Features
 - Clean & Good looking UI
