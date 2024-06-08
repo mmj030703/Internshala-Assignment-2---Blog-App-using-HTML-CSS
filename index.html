@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="This is a blog page all about the journey of learning frontend development by Mayank Mahavir Jain.">
+    <meta name="author" content="Mayank M Jain">
+    <meta name="keywords"
+        content="blog, blog page, blog website, blogs, mayank's blog, mayank jain, frontend development, journey">
+    <title>Mayank's Blog</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="home">
+        <section class="container">
+            <!-- Header Section - Desktop Navbar -->
+            <nav class="header-navbar-desktop">
+                <p class="header-logo"><a href="index.html" title="Mayank's Blog">Mayank's Blog</a></p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="blogs-item"><a href="#blogs">Blogs</a>
+                        <ul class="blogs-item-dropdown">
+                            <li><a href="#blog1">Center a <i>div</i></a></li>
+                            <li><a href="#blog2">State Management in React</a></li>
+                            <li><a href="#blog3">Enctype in HTML Forms</a></li>
+                            <li><a href="#blog4">Subscribing to the Redux Store</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Section - Mobile Navbar -->
+            <nav class="header-navbar-mobile">
+                <p class="header-logo"><a href="index.html">Mayank's Blog</a></p>
+
+                <!-- Hamburger & Cross Icon for Mobile Navbar -->
+                <input type="radio" name="check-nav" id="open-nav">
+                <input type="radio" name="check-nav" id="close-nav">
+                <label class="hamburger-icon" for="open-nav"><i class="fa fa-bars"></i></label>
+                <label class="close-icon" for="close-nav"><i class="fa fa-close"></i></label>
+                
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="blogs-item"><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <!-- Blog Page Heading -->
+                <h1 class="header-heading">My Frontend Journey</h1>
+                <!-- Blog Page Description -->
+                <p class="header-description">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <span>Hi, I'm Mayank Mahavir Jain, a web developer passionate about Full Stack Development. Join me on my front-end journey!</span>
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+            </article>
+        </section>
+    </header>
+    
+    <!-- Main Body -->
+    <main>
+        <!-- Blog Posts Section -->
+        <section class="container blog-section" id="blogs">
+            <h2 class="blog-section-heading">My Blogs</h2>
+            <section class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post" id="blog1" title="1) How to center a div">
+                    <!-- Blog Heading -->
+                    <h3 class="blog-post-heading">1) How to center a <i>div</i></h3>
+                    <!-- Blog Summary -->
+                    <p class="blog-post-summary">In this blog, we will see different ways to center a <i>div</i>.
+                        Centering a <i>div</i> is one of the major
+                        concerns when it comes to css.</p>
+                    <img class="blog-post-image" src="./resources/blog1 - centering the div.webp" alt="CSS Image" />
+                    <!-- More about the Blog -->
+                    <section class="blog-post-more-info">
+                        <p>Centering a <i>div</i> can sometimes feel like an art form in web development. Whether you’re
+                            aiming for horizontal,
+                            vertical, or perfect centering both ways, CSS offers a variety of techniques to get the job
+                            done. In this post,
+                            we’ll explore the most effective methods to center a <i>div</i>.</p>
+                        <p>To Center the <i>div</i> following are the ways:</p>
+                        <ul>
+                            <li>Centering Horizontally with margin: auto</li>
+                            <li>Centering Vertically with Flexbox</li>
+                            <li>Perfect Centering with Flexbox</li>
+                            <li>Using CSS Grid for Perfect Centering</li>
+                        </ul>
+                    </section>
+                    <div class="blog-post-video-container">
+                        <p>For more information watch the below video: <span class="blog-post-hand-emoji">👇</span></p>
+                        <video class="blog-post-video" src="./resources/blog1 - video.mp4" controls></video>
+                    </div>
+                </article>
+                <!-- Blog Post 2 -->
+                <article class="blog-post" id="blog2" title="2) State Management in React">
+                    <!-- Blog Heading -->
+                    <h3 class="blog-post-heading">2) State Management in React</h3>
+                    <!-- Blog Summary -->
+                    <p class="blog-post-summary">State management in React can range from managing local state within
+                        components to using advanced solutions like the
+                        Context API or external libraries such as Redux for larger applications.</p>
+                    <img class="blog-post-image" src="./resources/blog2 - state management in react.jpg"
+                        alt="React Image" />
+                    <!-- More about the Blog -->
+                    <section class="blog-post-more-info">
+                        <p>Managing state in React can be a complex task, especially as your application grows. With
+                            various tools and strategies
+                            available, choosing the right approach can significantly affect your application's
+                            performance and maintainability. In
+                            this guide, we'll explore the different state management options in React and how to
+                            implement them effectively.</p>
+                        <p>Different ways to achieve state management in React:</p>
+                        <ul>
+                            <li>Local State</li>
+                            <li>Context API</li>
+                            <li>Using Redux</li>
+                        </ul>
+                    </section>
+                    <div class="blog-post-video-container"> 
+                        <p>For more information watch the below video: <span class="blog-post-hand-emoji">👇</span> </p>
+                        <video class="blog-post-video" src="./resources/blog2 - video.mp4" controls></video>
+                    </div>
+                </article>
+                <!-- Blog Post 3 -->
+                <article class="blog-post" id="blog3" title="3) Enctype in HTML Forms">
+                    <!-- Blog Heading -->
+                    <h3 class="blog-post-heading">3) Enctype in HTML Forms</h3>
+                    <!-- Blog Summary -->
+                    <p class="blog-post-summary">In this blog, we'll explore the enctype attribute in HTML forms, which
+                        is essential for specifying how form data should
+                        be encoded before sending it to the server. Understanding enctype is crucial for web developers
+                        to ensure that form
+                        submissions are handled correctly, especially when dealing with file uploads and complex data
+                        structures.</p>
+                    <img class="blog-post-image" src="./resources/blog3 - enctype in form.png" alt="Enctype in Form" />
+                    <!-- More about the Blog -->
+                    <section class="blog-post-more-info">
+                        <p>The enctype attribute in HTML forms stands for "encoding type". It specifies how the form
+                            data should be encoded when
+                            it's sent to the server.</p>
+                        <p>This attribute is used with the <i>form</i> tag and has three possible values:</p>
+                        <ul>
+                            <li>application/x-www-form-urlencoded (default)</li>
+                            <li>multipart/form-data</li>
+                            <li>text/plain</li>
+                        </ul>
+                    </section>
+                    <div class="blog-post-video-container">
+                        <p>For more information watch the below video: <span class="blog-post-hand-emoji">👇</span> </p>
+                        <video class="blog-post-video" src="./resources/blog3 - video.mp4" controls></video>
+                    </div>
+                </article>
+                <!-- Blog Post 4 -->
+                <article class="blog-post" id="blog4" title="4) Subscribing to the Redux Store">
+                    <!-- Blog Heading -->
+                    <h3 class="blog-post-heading">4) Subscribing to the Redux Store</h3>
+                    <!-- Blog Summary -->
+                    <p class="blog-post-summary">Managing state in a React application can be challenging, especially as
+                        your application grows. Redux is a popular state
+                        management library that helps you manage your application’s state in a predictable way. One of
+                        the key features of Redux
+                        is the ability to subscribe to store updates, which allows your application to respond to
+                        changes in the state. In this
+                        blog, we will explore how to subscribe to the Redux store and handle state updates effectively.
+                    </p>
+                    <img class="blog-post-image" src="./resources/blog4 -  subscribing to the Redux Store.jpeg"
+                        alt="Redux DataFlow Diagram" />
+                    <!-- More about the Blog -->
+                    <section class="blog-post-more-info">
+                        <p>Redux is a predictable state container for JavaScript apps. It helps you manage the state of
+                            your application in a
+                            single, centralized store.</p>
+                        <p>The main components of Redux are:</p>
+                        <ul>
+                            <li><strong>Store</strong>: Holds the application state.</li>
+                            <li><strong>Actions</strong>: Describe what happened.</li>
+                            <li><strong>Reducers</strong>: Describe how the state changes in response to actions.</li>
+                        </ul>
+                    </section>
+                    <div class="blog-post-video-container">
+                        <p>For more information watch the below video: <span class="blog-post-hand-emoji">👇</span> </p>
+                        <video class="blog-post-video" src="./resources/blog4 - video.mp4" controls></video>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Author Section - Information about the Author of the Blog Page -->
+        <section class="container">
+            <!-- About Me -->
+            <article class="about-me-section" id="about">
+                <h2 class="about-me-section-heading">About Me</h2>
+                <section class="about-me">
+                    <figure>
+                        <img class="about-me-profile-image" src="./resources/mayank img.jpg"
+                            alt="Profile Image" title="It's Me 😀! Mayank M Jain">
+                    </figure>
+                    <article class="about-me-summary">
+                        <p>
+                            Thanks for visiting my blog. Myself Mayank Mahavir Jain, graduated in 2024. I have passion in
+                            Web Development. I have learnt Frontend Development from online resources like Youtube, chatGPT, and many more....
+                            I have skills like React JS, Redux Toolkit, Tailwind, JavaScript, HTML & CSS, Git & API Handling. I
+                            have created many projects in these technologies and you can check those in my <a href="#portfolio" title="Visit my Portfolio">portfolio.</a></p>
+                        <p>Currently on the way to dive into the Full Stack Web Development.</p>
+                        <p>In this blog, I have shared my journey about learning frontend development. You will find my
+                            overall
+                            journey about what I did while learning frontend development. How I was able to learn it
+                            from
+                            online
+                            resources. Currently, you will find some of my blog posts <a href="#blogs" title="Go to Blogs">above</a>.
+                        </p>
+                    </article>
+                </section>
+            </article>
+
+            <!-- Contact Me -->
+            <article class="contact-me-section" id="contact">
+                <h2 class="contact-me-section-heading">Contact Me</h2>
+                <!-- Contact Form -->
+                <form class="contact-me-form" action="">
+                    <div class="form-field">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" minlength="3" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@xyz.com" required />
+                    </div>
+                    <div class="contact-me-form-message-field form-field">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" rows="7" cols="30" minlength="5" placeholder="Write your message" required ></textarea>
+                    </div>
+                    <div class="contact-me-form-buttons">
+                        <input type="submit" value="Submit Form" class="input-btn" />
+                        <input type="reset" value="Reset Form" class="input-btn" />
+                    </div>
+                </form>
+
+                <!-- Social Media Links -->
+                <article class="social-media-container">
+                    <p class="social-media-container-heading">You can connect me here:</p>
+                    <ul class="contact-me-social-media-icons">
+                        <a title="Email Me" href="mailto:mmj04467@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/mayank-mahavir-jain-9098651a9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a title="Visit my Portfolio" href="https://mayank-m-jain-portfolio.netlify.app/" target="_blank"><i class="fa-solid fa-globe" id="portfolio"></i></a>
+                        <a title="Github" href="https://github.com/mmj030703" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a title="Twitter" href="https://x.com/mmj030703" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a title="Instagram" href="https://www.instagram.com/mmj_030703/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </ul>
+                </article>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Footer Navigation Links -->
+        <nav class="footer-navigation-links">
+            <p>Navigation Links</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blogs">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <p class="footer-copyright-message">Copyright &copy; 2024 Mayank M Jain</p>
+    </footer>
+
+    <!-- Move to top Button  -->
+    <a title="Move to Top" href="#home" class="move-to-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+</body>
+
+</html>
